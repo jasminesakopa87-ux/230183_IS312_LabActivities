@@ -1,0 +1,84 @@
+/* Author: [Jasmine SAKOPA]
+   Date: March 1st, 2026
+   Description: External CSS for LAb1 - Styling Navigation, Header, and Footer.
+*/
+
+body{
+	margin: 0;
+	font-family: 'Times New Roman', serif; /*Matching the serif font in the mockup */
+}
+
+/* Defining the Grid Layout (Task 2) */
+.main-grid{
+	display: grid;
+	grid-template-columns: 280px 1fr; /* Side width and flexible main content */
+	grid-template-rows: auto auto 1fr auto;
+	grid-template-areas:
+        "header header"
+		" nav nav"
+		"sidebar dash"
+		"footer footer";
+	min-height: 100vh;
+}
+
+/* Header Styling (Green) */
+.header{
+	grid-area: header;
+	background-color: #008000; /* Requirement 3a */
+	text-align: center;
+	padding: 30px;
+}
+
+/* Navigation Styling (Yellow) */
+.navbar{
+	grid-area: nav;
+	background-color: #FFFF00; /*Requirement 3a */
+	padding: 5px 15px
+}
+
+.navbar ul {
+	list-style: none;
+	padding: 0;
+	display: flex;
+}
+
+.navbar li a {
+	text-decoration: none;
+	color: #0000EE;
+	padding: 10px 15px;
+	font-size: 14px;
+}
+
+/* Styles for the 'About DBL' active gray box */
+.navbar a.active {
+	background-color: #D3D3D3;
+}
+
+/* Slidebar Styling */
+.sidebar {
+	grid-area: sidebar;
+	padding: 20px;
+}
+
+.sidebar ul {
+	list-style: none;
+	padding: 0;
+}
+
+.sidebar a {
+	color: #4B0082; /* Purple-ish links from mockup */
+	font-size: 14px;
+}
+
+/* Main Dashboard Area */
+.dashboard {
+	grid-area: dash;
+	padding: 20px;
+}/* Footer Styling (Light Gray) */
+.footer {
+	grid-area: footer;
+	background-color: #F2F2F2; /* Requirement 3a */
+	text-align: center;
+	padding: 20px;
+	font-size: 13px;
+}

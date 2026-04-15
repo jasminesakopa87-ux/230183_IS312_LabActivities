@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- 
+        Author: [Jasmine SAKOPA]
+        Date: March 1st, 2026
+        Description: IS312 Lab 1 - Diwai Bank Ltd Interface using HTML5 and CSS Grid.
+    -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Diwai Bank Ltd - Dashboard</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="main-grid">
+        <!-- Header Section (Green) -->
+        <header class="header">
+            <h1>Diwai Bank Ltd</h1>
+        </header>
+
+        <!-- Navigation Section (Yellow) -->
+        <nav class="navbar">
+            <ul>
+                <li><a href="#">About DBL</a></li>
+                <li><a href="#"class="active">Personal Banking</a></li>
+                <li><a href="#">Business Banking</a></li>
+                <li><a href="#">International Banking</a></li>
+                <li><a href="#">Contact us</a></li>
+            </ul>
+        </nav>
+
+        <!-- Content Area: Split into two columns -->
+        
+            <aside class="sidebar">
+                <h3>Transfer money</h3>
+                <ul>
+                    <li><a href="#">Accounts</a></li>
+                    <li><a href="#">Transfer between accounts</a></li>
+                    <li><a href="#">Third-party transfers</a></li>
+                </ul>
+            </aside>
+
+            <main class="dashboard">
+                <h3>Dashboard</h3>
+                <p>If customer clicks on Accounts, this page should display the accounts information.</p>
+                <p>If customers clicks on transfer between accounts, this should display form for such transfer.</p>
+                <p>If customer clicks on Third-party transfers, this should display form for such transfers.</p>
+            </main>
+       
+
+        <!-- Footer Section (Light Gray) -->
+        <footer class="footer">
+            <p>&copy; Copyright 2024 Diwai Bank Ltd</p>
+        </footer>
+    </div>
+
+</body>
+</html>
